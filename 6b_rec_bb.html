@@ -1,0 +1,29 @@
+<body>
+<h1>JavaScript Output Methods (24B11CS215)</h1>
+<button onclick="showAlert()">Show Alert</button>
+<button onclick="logToConsole()">Log To Console</button>
+<button onclick="writeToDocument()">Write to Document</button>
+<button onclick="updateDOM()">Update DOM</button>
+ <div id="outputArea">Output Will appear here...</div>
+<script>
+   //1.Alert box
+    function showAlert() {
+    alert("This is an alert box !");
+    }
+   //2.Console log
+   function logToConsole() {
+     console.log("This message is logged to the console");
+    }
+   //3.Document  write
+    function writeToDocument()
+    {
+      document.write("This text is written directly to the document.");
+    }
+    //4.DOM manipulation
+     function updateDOM()
+       {
+        document.getElementById("outputArea").innerText="This text was inserted using DOM manipulation.";
+       }
+     </script>
+    </body>
+ </html>

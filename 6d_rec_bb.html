@@ -1,0 +1,19 @@
+<script>
+  function checkVoter() {
+    const name = prompt("Enter your name:");
+    const age = prompt("Enter your age:");
+    // Validation
+    if (name === null || age === null || name.trim() === "" || age.trim() === "" || isNaN(age)) {
+      alert("Please enter valid name and age!");
+      return;
+    }
+    const ageNum = parseInt(age);
+    let eligibility = (ageNum >= 18) ? "Eligible to Vote ✅" : "Not Eligible to Vote ❌";
+    // Display result in a table
+    document.getElementById("result").innerHTML = `
+      <table>
+        <tr><th>Name</th><th>Age</th><th>Status</th></tr>
+        <tr><td>${name}</td><td>${ageNum}</td><td>${eligibility}</td></tr>
+      </table>
+  }
+</script>
