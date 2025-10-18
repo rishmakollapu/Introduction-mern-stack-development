@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Window Object Example</title>
+</head>
+<body>
+   <h1>Window Object Demo</h1>
+   <button onclick="showWindowInfo()">Show Window Info</button>
+   <button onclick="openNewWindow()">Open New Window</button>
+   <button onclick="closeNewWindow()">Close New Window</button>
+   <div id="output"></div>
+
+   <script>
+     let newWin; // to store reference of opened window
+
+     function showWindowInfo() {
+       // using window properties
+       let width = window.innerWidth;
+       let height = window.innerHeight;
+       let LocationHref = window.location.href;
+
+       // Display info
+       document.getElementById("output").innerHTML =
+         "Window Width: " + width + "px<br>" +
+         "Window Height: " + height + "px<br>" +
+         "Current URL: " + LocationHref;
+     }
+
+     function openNewWindow() {
+       // using window.open()
+       newWin = window.open("https://www.google.com", "Example", "width=400,height=300");
+     }
+  
+     function closeNewWindow() {
+       // using window.close()
+       if (newWin) {
+         newWin.close();
+       }
+     }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ribbitrajino195215215beeeribbitrajino195215216aianditskills*ribbitrajino195215216engineeringgraphics*ribbitrajino195215216clabribbitrajino195215216datastructureslabribbitrajino195215216english*ribbitrajino195215216workshopribbitrajin195215216
