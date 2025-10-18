@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8>
+  <title>Pseudo-Class Selectors Example</title>
+  <style>
+    /* :hover - when mouse is over the element */
+    a:hover {
+       color: red;
+       text-decoration: underline;
+    }
+    
+
+/* :first child - targets the first child element */
+    ul li:first-child {
+       font-weight: bold;
+       color: green;
+    }
+    /* :last-child - targets the last child element */
+    ul li:last-child {
+      font-style : italic;
+      color:blue;
+    }
+    /* :nth-child(n) - targets the nth child */
+    ul li:nth-child(2) {
+      background-color: #ffffcc;
+    }
+    /* :focus - applies when input is focused */
+    input: focus {
+     border : 2px solid orange;
+     outline:none;
+    }
+    /*checked - when checkbox is selected */
+    input[type="checkbox"]:checked + label {
+      color: darkblue;
+      font-weight: bold;
+    }
+ /* :visited-visited links */
+    a:visited {
+        
+
+color: purple;
+    }
+    </style>
+   </head>
+</body>
+     <h1>Pseudo-Class selectors Demo 24B11CS215</h1>
+     <a herf="https://www.msn.com/en-in/lifestyle/style/how-to-dine-like-a-local-in-japan-the-cultural-rules-tourists-should-know/ar-AA1JCOkq?ocid=msedgdhp&pc=LCTS&cvid=bc5fa2cb38f84f28f370f2c31459ae66&ei=24" target="_blank">Hover or visit Me</a>
+     <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ul>
+	</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Selectors Example</title>
+  <style>
+  /*Element Selector */
+   p {
+      color:green;
+      font-size:16px;
+      }
+    /* Universal Selector */
+    * {
+      font-family:Arial,sans-serif;
+      box-sizing: border-box;
+      margin: 5px;
+      padding: 0;
+    }
+
+    /* Type Selector */
+    div {
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    
+
+
+/* Class Selector */
+    .highlight {
+      background-color: yellow;
+      padding :5px;
+      font-weight: bold;
+    }
+
+    /* ID Selector */
+    #unique {
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    /* Group Selector */
+    h1,h2,h3 p {
+       color:darkred;
+       text-align:center;
+      font-family: Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    
+
+
+<h1>Simple Selector Demo This is the Main Title</h1>
+    <h2>Subheading (24B11CS215)</h2>
+    <h3>Minor Heading</h3>
+    <p>This is a paragraph using the group selector.</p>
+    <p class="highlight">This paragraph uses a class selector.</p>
+    <p id="unique">This Paragraph uses an <strong>ID selector</strong>.</p>
+    <p class="highlight" id="unique">This paragraph uses both<strong>class</strong>and <strong>ID selectors</strong>.</p>
+  </div>
+</body>
+</html>
