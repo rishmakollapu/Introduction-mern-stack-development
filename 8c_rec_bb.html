@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print 1 to 10 using Loops</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+     
+
+
+ text-align: center;
+      margin-top: 60px;
+    }
+    h1 {
+      color: #222;
+    }
+    .output {
+      background-color: #ffffff;
+      border: 2px solid #87cefa;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+      padding: 20px 40px;
+      margin: 10px;
+    font-size: 18px;
+      line-height: 1.8;
+    }
+    p {
+      color: #444;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Print Numbers from 1 to 10 (24B11CS215)</h1>
+  <p>This program prints numbers from 1 to 10 using <b>for</b>, <b>while</b>, and <b>do-while</b> loops.</p>
+  
+
+
+<div class="output" id="result"></div>
+  <script>
+    let output = "";
+    // For loop
+    output += "Using for loop:<br>";
+    for (let i = 1; i <= 10; i++) {
+      output += i + " ";
+    }
+    // While loop
+    output += "<br><br>Using while loop:<br>";
+    let j = 1;
+    while (j <= 10) {
+   output += j + " ";
+      j++;
+    }
+    // Do-while loop
+    output += "<br><br>Using do-while loop:<br>";
+    let k = 1;
+    do {
+      output += k + " ";
+      k++;
+    } while (k <= 10);
+    // Display final output
+    document.getElementById("result").innerHTML = output;
+  </script>
+</body>
+</html>
